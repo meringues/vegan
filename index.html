@@ -110,8 +110,7 @@
     <script>
 $(document).ready(function(){
     $('.user-signup__form').on('submit', function (event) {
-                          fbq('track', 'Lead');
-
+ga('send', 'event', 'CTA', 'submitForm', 'leadGen');
         });
 });
     </script>
