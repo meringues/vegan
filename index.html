@@ -29,7 +29,7 @@
                                     <h1 style="text-align: center;">Artisanal Vegan Meringues and Sweets</h1>
                                     <p style="text-align: center;
     font-family: helvetica;
-    font-weight: 100;">French meringues, Italian Meringues and Regional specialties
+    font-weight: 100;">French meringues and Italian Regional specialties
                                         <br/>all 100% Vegan & Eggs Free</p>
                                     <p style="text-align: center;">
                                         <img src="res/spacer.png" alt="" class="spacer insert--image wrap-off-align-center">
@@ -108,11 +108,15 @@
     </noscript>
     <!-- End Facebook Pixel Code -->
     <script>
-$(document).ready(function(){
-    $('.user-signup__form').on('submit', function (event) {
-ga('send', 'event', 'CTA', 'submitForm', 'leadGen');
+        $(document).ready(function () {
+            $('.user-signup__form').on('submit', function (event) {
+                ga('send', 'event', 'CTA', 'submitForm', 'leadGen');
+            });
+            
+            $('.user-signup__submit').on('click', function (event) {
+                ga('send', 'event', 'CTA', 'clickSubmitButton', 'leadGen');
+            })
         });
-});
     </script>
 </body>
 
